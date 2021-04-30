@@ -4,7 +4,7 @@ KernelMode AntiCheat
 Just to see of what you should be aware when dealing with KMAC
 
 Many people are fighting with KMAC in ring0 and its cool to have some vulnerable signed driver that opens for you a door to windows kernel. You may either try to exploit some CVE: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=driver or find yourself a 0-day which is not that easy but it's less detectable by anticheats. Here is a nice tool which enumerates x64 driver imports: https://gist.github.com/adrianyy/9c481c9b3b115a910985ce310d948534
-I will add zip with some publicly well known drivers (signed & vulnerable)
+I will add archive with some publicly well known drivers (signed & vulnerable), password for extraction is just simply 'password'.
 
 Looks like in ci.dll are some undocumented structures that leave some traces about (un)loaded drivers, see this:
 https://github.com/TheCruZ/kdmapper/blob/master/kdmapper/intel_driver.cpp#L626
