@@ -1,3 +1,7 @@
+//--------------------------------------------------------------------------------------------
+//not my work, see https://github.com/ApexLegendsUC/anti-cheat-emulator/blob/master/Source.cpp
+//--------------------------------------------------------------------------------------------
+
 #include <ntifs.h>
 #include <ntddk.h>
 extern "C" {
