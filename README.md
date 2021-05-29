@@ -7,9 +7,7 @@ Many people are fighting with KMAC in ring0 and its cool to have some vulnerable
 I will add archive with some publicly well known drivers (signed & vulnerable), password for extraction is just simply 'password'. Nice talk about vulnerable drivers: https://eclypsium.com/2019/08/10/screwed-drivers-signed-sealed-delivered/
 
 Looks like in ci.dll are some undocumented structures that leave some traces about (un)loaded drivers, see this:
-https://github.com/TheCruZ/kdmapper/blob/master/kdmapper/intel_driver.cpp#L626
-and
-https://key08.com/index.php/2021/02/06/902.html
+https://github.com/TheCruZ/kdmapper/blob/master/kdmapper/intel_driver.cpp#L626 https://key08.com/index.php/2021/02/06/902.html
 
 about BE see: https://secret.club/
 
@@ -51,7 +49,7 @@ V4nguard is scanning for this devices (i bet 4 bl4cklist -> b4n):
 - \DosDevices\inpout
 
 # CVEs
-As you may see many known bad drivers are blacklisted by BE/EAC and others because they were already used in public game cheats (and released on uc). Here are listed most recent CVEs: (i will try to keep this list updated)
+As you may see many known bad drivers are blacklisted by BE/EAC and others because they were already used in public game cheats (and released on uc). Here are listed most recent  interesting CVEs: (i will try to keep this list updated)
 
 ## CVE-2021-31728 & CVE-2021-31727 (zemana again)
 Not recommended to use because zemana was already detected in past even if these are new CVEs. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31728 & https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31727 POC: https://github.com/irql0/CVE-2021-31728
@@ -61,11 +59,12 @@ Looks like this is second version of infamous AsIO and they just can't learn fro
 //todo: more info
 
 ## CVE-2021-27965 (MsIo64.sys)
-//todo
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27965
+//todo POC
 
-## CVE-2021-21551
+## CVE-2021-21551 (dbutil_2_3.sys)
 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21551
-//todo
+//todo POC
 
 ## CVE-2020-0796 aka SMBGhost
 RCE in microsoft SMB v3 protocol (when using compression) which can be used on localhost or remotely on LAN (arbitrary kernel memory read/write). Exploiting requires Windows10 1903 or 1909. Advantage is that nothing suspicious is running on target system because attack vector is network and bug happens in srv2.sys - microsoft windows file. See POC: https://github.com/ZecOps/CVE-2020-0796-LPE-POC (write_what_where - write arbitrary kernel memory over local network)
