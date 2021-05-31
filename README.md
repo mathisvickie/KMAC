@@ -63,8 +63,7 @@ https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27965
 //todo POC
 
 ## CVE-2021-21551 (dbutil_2_3.sys)
-https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21551
-//todo POC
+Local Privilege Escalation to nt authority/system PoC: https://github.com/mathisvickie/CVE-2021-21551
 
 ## CVE-2020-0796 aka SMBGhost
 RCE in microsoft SMB v3 protocol (when using compression) which can be used on localhost or remotely on LAN (arbitrary kernel memory read/write). Exploiting requires Windows10 1903 or 1909. Advantage is that nothing suspicious is running on target system because attack vector is network and bug happens in srv2.sys - microsoft windows file. See POC: https://github.com/ZecOps/CVE-2020-0796-LPE-POC (write_what_where - write arbitrary kernel memory over local network)
