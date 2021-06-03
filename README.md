@@ -59,8 +59,7 @@ Looks like this is second version of infamous AsIO and they just can't learn fro
 //todo: more info
 
 ## CVE-2021-27965 (MsIo64.sys)
-https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27965
-//todo POC
+For PoC see: https://github.com/mathisvickie/CVE-2021-27965
 
 ## CVE-2021-21551 (dbutil_2_3.sys)
 Local Privilege Escalation to nt authority/system PoC: https://github.com/mathisvickie/CVE-2021-21551
