@@ -51,6 +51,10 @@ V4nguard is scanning for this devices (i bet 4 bl4cklist -> b4n):
 # CVEs
 As you may see many known bad drivers are blacklisted by BE/EAC and others because they were already used in public game cheats (and released on uc). Here are listed most recent  interesting CVEs: (i will try to keep this list updated)
 
+## CVE-2021-36276 (dbutil version2)
+Dell DBUtilDrv2.sys driver (versions 2.5 and 2.6) contains an insufficient access control vulnerability which may lead to escalation of privileges, denial of service, or information disclosure. Local authenticated user access is required.
+Note: it is WDF driver so I won't make any PoC - feel free to analyze it, search for imports MmMapIoSpace and MmUnmapIoSpace.
+
 ## CVE-2021-31728 & CVE-2021-31727 (zemana again)
 Not recommended to use because zemana was already detected in past even if these are new CVEs. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31728 & https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31727 POC: https://github.com/irql0/CVE-2021-31728
 
