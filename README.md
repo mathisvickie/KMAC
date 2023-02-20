@@ -1,3 +1,6 @@
+# UPDATE
+Okay guys, so I have pushed here some more vulnerable drivers in special-package.zip which some has even ioctl codes in their file name so you know where to look for treats. Anyway you will probably not need them lol because of secret.rar which is password protected but anyone with three digit iq will figure out the password (name of archive will help you) and what the content of that archive is used for. Then look into that batch script located inside. You will need to change your local time in order to use it because it already expired long time ago but window$ will load anyway expired drivers so no worries. Just hope (better backup) they will not take down my whole repo/account for sharing this. You can thank me later <3 and remember to also seed, not just feed.
+
 # KMAC
 KernelMode AntiCheat
 
